@@ -1,0 +1,193 @@
+<!DOCTYPE HTML>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--чтобы девайс 'увидел' адаптивную верстку-->
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow" rel="stylesheet">
+  <title>Барбершоп "Кантора"</title>
+</head>
+
+<body>
+  <header class="main-header">
+    <div class="centerfix">
+      <div class="logo_header main_page">
+        <a href="index.html"><img src="img/logo.png" alt="Главная"></a>
+      </div>
+      <div class="hidden-menu">
+          <a class="mobi-hover" href="javascript:void(0);" onclick="myFunction()">
+            <div class="icon"><span></span></div>
+          </a>
+          <ul class="drop-menu">
+            <li class="media-li">
+              <a href="index.html">Головна</a>
+            </li>
+            <li class="media-li">
+              <a href="index.html#main">Новини</a>
+            </li>
+            <li class="media-li">
+              <a href="price-list.html">Прайс-лист</a>
+            </li>
+          <li class="media-li">
+              <a href="index.html#about">Контакти</a>
+            </li>
+          </ul>
+      </div>
+      <nav class="main-navigation">
+        <ul>
+          <li><a href="index.html">Головна</a></li>
+          <li><a href="index.html#main">Новини</a></li>
+          <li><a href="price-list.html">Прайс-лист</a></li>
+          <li><a href="index.html#about">Контакти</a></li>
+        </ul>
+      </nav>
+      <div class="user-block">
+        <a class="login" href="#">Вхід</a>
+      </div>
+    </div>
+  </header>
+<!--Основной блок-->
+  <main class="main-block centerfix">
+    <div class="main-logo">
+      <img src="img/main-logo.png" width="368" height="204" alt="Барбершоп «Бородинский»">
+    </div>
+    <div class="features">
+      <div class="features-item">
+        <b class="features-name">Швидко</b>
+        <div class="rhomb"></div>
+        <p>Ми робимо свою роботу швидко! Дві години пролетять непомітно і ви щасливий володар стильної стрижки!</p>
+      </div>
+      <div class="features-item">
+        <b class="features-name">Круто</b>
+        <div class="rhomb"></div>
+        <p>Забудьте, як ви стриглися раніше. Ми зробимо з вас зірку футболу чи кіно! У всякому разі зовні.</p>
+      </div>
+      <div class="features-item">
+        <b class="features-name">Дорого</b>
+        <div class="rhomb"></div>
+        <p>Наші майстри—професіонали своєї справи і не можуть коштувати дешево. До того ж, хіба ціна не дає певного статусу?</p>
+      </div>
+    </div>
+    <div class="main-content" id="main">
+      <div class="main-content-left">
+        <h2 class="main-content-title">Новини</h2>
+        <ul class="news-preview">
+          <li>
+            <p>Нам нарешті завезли Ягермайстер! Тепер ви можете пропустити стаканчик під час стрижки</p>
+            <time datetime="2016-01-11">31 грудня</time>
+          </li>
+          <li>
+            <p>У нашій команді поповнення, Борис «Бритва» Стригунець, володар безлічі титулів і нагород поповнив наші стрункі лави</p>
+            <time datetime="2016-01-18">1 січня</time>
+          </li>
+        </ul>
+        <a class="btn" >Всі новини</a>
+      </div>
+      <div class="main-content-right">
+        <h2 class="main-content-title">Фотогалерея</h2>
+        <div class="gallery">
+          <ul class="gallery-content">
+            <li class="slide showing"></li>
+            <li class="slide"></li>
+            <li class="slide"></li>
+          </ul>
+          <div id="block-gallery" class="block-btn">
+            <button class="btn gallery-prev">Назад</button>
+            <button class="btn gallery-next">Вперед</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="main-content" id ="about">
+      <div class="main-content-left">
+        <h2 class="main-content-title">Контактна інформація</h2>
+        <p>
+          Барбершоп «Кaнтора»<br>
+          Адреса: в. Володимира Сосюри, Лозова, Харківська область<br>
+          Телефон: +380500556881
+        </p>
+        <p>
+          Час роботи:<br>
+          пн — пт: з 10:00 до 22:00<br>
+          сб — нд: з 10:00 до 19:00
+        </p>
+        <div class="block-btn">
+          <a class="btn-map" href="#">Як проїхати</a>
+          <a class="btn" >Зворотній зв'язок</a>
+        </div>
+      </div>
+      <div class="main-content-right">
+        <h2 class="main-content-title">Записатися</h2>
+        <p>Вкажіть бажану дату і час і ми зв'яжемося з вами для підтвердження бронювання</p>
+        <form class="enroll-form" action="#" method="post">
+          <input type="text" name="date" value="" placeholder="Дата" required>
+          <input type="text" name="time" value="" placeholder="Час">
+          <input type="text" name="name" value="" placeholder="Ваше ім'я" required>
+          <input type="tel" name="phone" value="" placeholder="Телефон" required>
+          <button class="btn1" type="submit">Відправити</button>
+        </form>
+      </div>
+    </div>
+  </main>
+  <!--подвал-->
+  <footer class="main-footer">
+    <div class="centerfix">
+      <div class="footer footer-contacts">
+        Барбершоп «Кантора»<br>
+        Адреса: в. Володимира Сосюри, Лозова, Харківська область<br>
+        <a href="#">Як нас знайти?</a><br>
+        Телефон: +380500556881
+      </div>
+      <div class="footer footer-social">
+        <p>Давайте спілкуватись!</p>
+        <a class="social-btn social-btn-inst" href="https://www.instagram.com/barbershop_lozova?igsh=MXAzdnVuY3ltcmk1eQ%3D%3D">Інстаграм</a>
+        <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+      </div>
+      <div class="footer footer-copyright">
+        <div class="creator">
+          <p>Розроблено:</p>
+          <a class="btn" href="https://t.me/+HV0kAOr0VMI5MmZi">Команда шарікі</a></div>
+        <div class="executor">
+          <p>Сверстано:</p>
+          <a class="btn" href="https://t.me/mxqweozy" target="_blank">leimary</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Всплывающая форма -->
+  <div class="modal-content">
+      <button class="modal-content-close" type="button" title="Закрити">Закрити</button>
+      <h2 class="modal-content-title">Особистий кабінет</h2>
+      <p>Введіть, будь ласка, свій логін і пароль.</p>
+      <form class="login-form" action="#" method="post">
+        <input class="icon-user" type="text" name="login" placeholder="Логін" required>
+        <input class="icon-password" type="password"  name="password" placeholder="Пароль" required>
+        <label class="login-checkbox">
+          <input type="checkbox" name="remember">
+          <span class="checkbox-indicator"></span>
+          Запам'ятати
+        </label>
+        <a class="restore" href="#">Я забув пароль!</a>
+        <button class="btn" type="submit">Увійти</button>
+        <a class="field-reg"><span>Зареєструватись</span></a>
+      </form>
+    </div>
+    <div class="modal-content-map">
+      <button class="modal-content-close" type="button" title="Закрити">Закрити</button>
+      <!-- <div id="google-map"></div> -->
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2623.7496510419624!2d36.285944777298376!3d48.882048871335435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40df29004f0eea5b%3A0x8f25bfd39756d883!2z0JHQsNGA0LHQtdGA0YjQvtC_IEthbnRvcmE!5e0!3m2!1suk!2sua!4v1706874461181!5m2!1suk!2sua" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </div>
+    <!-- Кнопка вверх -->
+    <a class="upbutton" href="#" onclick="JumpUp(); return false;">Вгору
+    </a>
+    <!--Скрипт для прокрутки вверх -->
+    <script src="js/scrollUp.js"></script>
+    
+    <script src="js/jquery.js"></script>
+    <script src="js/modal.js"></script>
+    <script src="js/drop.js"></script>
+    <script src="js/main-gallery.js"></script>
+
+</body>
+</html>
